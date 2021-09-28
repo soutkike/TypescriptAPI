@@ -22,7 +22,7 @@ class Server {
     try {
       await db.authenticate();
     } catch (error) {
-      throw new Error(error);
+      throw new Error("Error");
     }
   }
   middlewares() {
